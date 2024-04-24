@@ -1,0 +1,370 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url("assets/Images/Bg\ img.jpg");
+    background-position: center center;
+    height:80vh;
+    width:100vw;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.main .main-box{
+    height:100%;
+    width:100%;
+    background-color: black;
+    opacity:0.65;
+    position: relative;
+}
+
+nav{
+    height:70px;
+    position: absolute;
+    color:white;
+    z-index: 10;
+    width:80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:0 auto;
+}
+
+.signup-box{
+    text-align: center;
+    position: absolute;
+    color:white;
+    z-index: 10;
+    top:30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.red-btn{
+    padding:6px 14px;
+    background-color: red;
+    color:white;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.lang{
+    padding:4px 14px;
+    margin-right:15px;
+    border-radius: 5px;
+    background: transparent;
+    color:white;
+    font-weight: 600;
+}
+
+.lang option{
+    color:black;
+}
+
+#signup-box-span1{
+    font-family: "Martel Sans", sans-serif;
+    font-size: 2.6rem;
+    font-weight: 900;
+}
+
+#signup-box-span2{
+    font-family: "Martel Sans", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+#signup-box-span3{
+    font-family: "Martel Sans", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+#email{
+    height:40px;
+    background: transparent;
+    border: 1px solid grey;
+    border-radius: 2px;
+    font-weight: 600;
+    width: 270px;
+    padding-left: 10px;
+    color:white;
+}
+
+.get-started{
+    height:41px;
+    font-size: 1rem;
+}
+
+.signup-box div{
+    display: flex;
+    gap:10px;
+}
+
+@media (max-width:960px){
+    .logo img{
+        width:80px;
+    }
+    #signup-box-span1{
+        font-size: 1.75rem;
+        font-weight: 900;
+        font-family: "Martel Sans", sans-serif;
+    }
+    #signup-box-span2{
+        font-size: 1rem;
+    }
+    #signup-box-span3{
+        font-size: 0.9rem;
+    }
+}
+
+.separation{
+    height:8px;
+    background-color: grey;
+    opacity: 0.25;
+}
+
+
+.first{
+    max-width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px auto 50px auto;
+    color:white;
+}
+
+@media (max-width: 1300px){
+    .first{
+        flex-wrap: wrap;
+        margin: 50px auto;
+    }
+}
+
+.sec-img{
+    position: relative;
+}
+
+.sec-img img{
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.sec-img video{
+    width: 400px;
+    position: absolute;
+    top:89px;
+    right:83px;
+}
+
+.first .sec-data :nth-child(1){
+    font-family: "Martel Sans", sans-serif;
+    font-size: 2.6rem;
+    font-weight: 900;
+    line-height: 55px;
+}
+
+.first .sec-data :nth-child(2){
+    font-family: "Martel Sans", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-top: 9px;
+    line-height: 30px;
+}
+
+.sec-data{
+    display: flex;
+    flex-direction: column;
+}
+
+#sec-img3 video{
+    width:337px;
+    top:45px;
+    right:112px;
+}
+
+.second, .third, .fourth{
+    margin:70px auto;
+}
+
+#FAQ-title{
+    font-family: "Martel Sans", sans-serif;
+    font-size: 2.6rem;
+    font-weight: 900;
+    color:white;
+    text-align:center;
+    margin:30px 0 20px 0;
+}
+
+.FAQ{
+    color:white;
+}
+
+.questions{
+    width: 70vw;
+    margin: auto;
+}
+
+.que{
+    font-family: "roboto", sans-serif;
+    transition: background-color 0.2s ease-in 0s;
+    padding: 25px 30px;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(43, 43, 43);
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.que:hover{
+    background-color: rgb(58, 57, 57);
+}
+
+.ready-msg{
+    color:white;
+    font-family: "roboto", sans-serif;
+    text-align: center;
+    margin: 40px 0 20px 0;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.email2{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;;
+}
+
+footer{
+    color:grey;
+    font-weight: 550;
+    width: 70vw;
+    margin: 50px auto;
+    font-family: "roboto", sans-serif;
+    font-size: 14px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width:1000px){
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        align-items: center;
+    }
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.footer-item a{
+    color:grey;
+}
+
+footer>div{
+    text-decoration: underline;
+    padding-bottom: 15px;
+}
+
+.dropdown2{
+    margin:20px 0;
+}
+
+footer :last-child{
+    text-decoration: none;
+}
+
+@media (max-width:900px) and (min-width:500px){
+    .sec-img img{
+        width: 450px;
+    }
+    .sec-img video{
+        width: 330px;
+        top:65px;
+        right: 60px;
+    }
+    #sec-img3 video {
+        width: 281px;
+        top: 29px;
+        right: 84px;
+    }
+    .first .sec-data :nth-child(1), #FAQ-title{
+        font-size: 2rem;
+    }
+    .first .sec-data :nth-child(2){
+        font-size: 1rem;
+    }
+    .que{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 500px){
+    .sec-img img{
+        width: 300px;
+    }
+    .sec-img video {
+        width: 218px;
+        top: 48px;
+        right: 42px;
+    }
+    #sec-img3 video {
+        width: 187px;
+        top: 19px;
+        right: 58px;
+    }
+    .first .sec-data :nth-child(1), #FAQ-title{
+        font-size: 1.5rem;
+        line-height: 40px;
+    }
+    .first .sec-data :nth-child(2){
+        font-size: 0.9rem;
+        line-height: 25px;
+    }
+    .signup-box{
+        margin-left: 15px;
+        margin-right: 15px ; 
+    }
+    .get-started {
+        height: 41px;
+        font-size: 0.8rem;
+    }
+    .ready-msg{
+        margin: 40px 15px 20px 15px;
+        font-size: 0.9rem;
+    }
+    .email2{
+        margin-left: 15px;
+        margin-right: 15px ; 
+    }
+    .que{
+        font-size: 1rem;
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 567px){
+    #signup-box-span1 {
+        line-height: 40px;
+    }
+}
